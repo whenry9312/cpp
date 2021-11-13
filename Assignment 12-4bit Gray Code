@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+main(){
+	string s;
+	int a,b,c;
+	cin>>s;
+	cout<<s[0];
+	for (b=0;b<s.size()-1;b++){
+		if (s[b]!=s[b+1]){
+			cout<<"1";
+		}
+		else
+		cout<<"0";
+	}
+	
+	
+}
