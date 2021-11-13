@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+main(){
+	int n,m,b;
+	cin>>n;
+	b=0;
+	for(m=1;m<=n;m++){
+		if (n%m==0){
+			b++;
+		}
+	}
+		if(b==2){
+			cout<<"啊是質數";
+		}
+		else{
+		cout<<"啊不是質數";
+		}
+}
