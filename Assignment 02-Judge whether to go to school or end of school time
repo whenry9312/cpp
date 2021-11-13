@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+main(){
+	int hh, mm , at_school , off_school;
+	cin>>hh>>mm;
+	hh=hh*60;
+	mm=mm+hh;
+	at_school=450;
+	off_school=1020;
+	if(mm>=at_school && mm<off_school){
+		cout<<"at school";
+	} 
+	else {
+		cout<<"off school";
+	}
+}
