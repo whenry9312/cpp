@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+main(){
+	int a,n,m;
+	cin>>a;
+	for (n=1; n<=a; n++){
+		if(a%n==0){
+			m=a/n;
+			cout<<m<<' ';
+		}
+	}
+
+}
