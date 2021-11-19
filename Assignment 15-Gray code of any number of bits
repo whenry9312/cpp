@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+main(){
+	string s,e,x;
+	int a,b;
+	cin>>s ;
+	cout<<s[0];
+	for(a=0;a<s.size()-1;a++){
+		if (s[b]!=s[b+1]){
+			cout<<"1";
+		}
+	else 
+	cout<<"0";
+
+	}	
+}
