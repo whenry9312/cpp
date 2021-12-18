@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+main(){
+	string s,e;
+	int a,b,c,x,y;
+	cin>>s>>e;
+	a=0;
+	if (s.size()>e.size()){
+		a=s.size()-1;
+	}
+	else
+		a=e.size()-1;	
+	for(b=0;b<=a;b++){
+		if(b==s.size()){
+			//b是跑到第幾位數 
+			x=b;
+			c=1;//紀錄字串 
+			break;
+		}
+		if(b==e.size()) {
+			//b是跑到第幾位數
+			x=b; 
+			c=2;//紀錄字串
+			break;
+		}
+		cout<<s[b]<<e[b];
+	}
+	if(c==1){
+		for(b=x;b<=a;b++)
+			cout<<e[b];
+	} 
+	if(c==2){
+		for(b=x;b<=a;b++)
+			cout<<s[b];
+	}
+}
