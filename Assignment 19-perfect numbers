@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+main(){
+	int a,b,c,d;
+	cin>>a;
+	for(b=1;b<=a;b++){
+		for(c=1;c<b;c++){
+			if(b%c==0){
+				d=d+c;
+			}
+		}
+		if(d==b){
+			cout<<d<<' ';
+			
+		}
+		d=0;
+	}
+}
