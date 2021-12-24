@@ -1,0 +1,14 @@
+#include<iostream>
+#include<cstdlib>//亂數相關的函數 
+#include<ctime>//時間相關的函數 
+using namespace std;
+main(){
+	int a,b,result;
+	unsigned seed; 
+	seed =(unsigned)time(NULL); // 取得時間序列,NULL表示空指標 
+	srand(seed); // 以時間序列當亂數種子
+	for(b=0;b<10;b++){
+		result=rand()%50+1;
+		cout<<result<<' ';
+	}
+}
