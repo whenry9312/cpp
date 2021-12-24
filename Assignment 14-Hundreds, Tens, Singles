@@ -1,0 +1,10 @@
+#include<iostream>
+#include<string>
+using namespace std;
+main(){
+	string s;
+	int a,b,c;
+	cin>>s;
+	s.insert(0,"00"); //代表s[0]的前面插入"00"的字元 
+	cout<<"百位數"<<s[s.size()-3]<<"十位數"<<s[s.size()-2]<<"個位數"<<s[s.size()-1];//從最後面開始讀 
+}
