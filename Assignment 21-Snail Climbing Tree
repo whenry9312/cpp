@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+main(){
+	int meter,day,night;
+	cin>>meter>>day>>night;
+	int a,b;
+	for(a=1;a<=1000;a++){
+		if(day>=meter){
+			break;
+		}
+		else{
+			b=day-night;
+			meter-=b;
+		}
+	}
+	cout<<a;
+	
+} 
