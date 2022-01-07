@@ -13,6 +13,6 @@ main(){
 			meter-=b;
 		}
 	}
-	cout<<a;
+	cout<<a<<"天";
 	
 } 
