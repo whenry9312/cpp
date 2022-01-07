@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+main(){
+	int hour,min,sec;
+	int h,m,s;
+	cin>>h>>m>>s;
+	hour=24;
+	min=0;
+	sec=0;
+	if(m>0){
+		if(m<=60){
+			min=60;
+			min-=m;
+			hour-=1;
+		}
+	}
+	if(s>0){
+		if(s<=60){
+			sec=60;
+			sec-=s;
+			min-=1;
+		}
+	}
+	hour-=h;
+	cout<<hour<<' '<<min<<' '<<sec;
+		
+	
+		
+}
